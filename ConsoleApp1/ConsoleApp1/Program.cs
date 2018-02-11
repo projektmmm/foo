@@ -28,7 +28,7 @@ namespace ConsoleApp1
                 Console.WriteLine("GET");
                 HttpResponseMessage response = await client.GetAsync("api/person/5");
 
-                //github test
+                //github testuji
                 if (response.IsSuccessStatusCode)
                 {
                     Person person = await response.Content.ReadAsAsync<Person>();
